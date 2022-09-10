@@ -13,7 +13,7 @@
                     <h6 class="text-muted">Status: <strong>{{character.status}}</strong></h6>
                     <h6 class="text-muted">Specie: <strong>{{character.species}}</strong></h6>
                     <h6 class="text-muted">Last location: <strong>{{character.location.name}}</strong></h6>
-                    <h6 class="text-muted">Last location url: <strong>{{character.location.url}}</strong></h6>
+                    <h6 class="text-muted">Last location url: <a [routerLink]="['/location-details', character.id]">{{character.location.url}}</a></h6>
                     <h6 class="text-muted">Date created: <strong>{{character.created | date}}</strong></h6>
                     <h6 class="text-muted">Episodes List: <li>{{character.episode}}</li></h6>
                 </div>

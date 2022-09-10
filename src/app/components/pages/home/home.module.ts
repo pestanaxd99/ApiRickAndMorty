@@ -6,6 +6,7 @@ import { HomeComponent } from './home.component';
 import { CharactersModule } from '../characters/characters.module';
 
 
+
 @NgModule({
   declarations: [
     HomeComponent
@@ -13,7 +14,7 @@ import { CharactersModule } from '../characters/characters.module';
   imports: [
     CommonModule,
     HomeRoutingModule,
-    CharactersModule
+    CharactersModule,
   ]
 })
 export class HomeModule { }

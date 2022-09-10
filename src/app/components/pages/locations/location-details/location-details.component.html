@@ -1,0 +1,19 @@
+<div class="row justify-content-center mt-3" *ngIf = "location$ | async as location">
+    <div class="col-xs-12 col-sm-6 col-md-6 justify-content-center">
+        <div class="card">
+            <div class="card-inner">
+                <div class="header">
+                    <a [routerLink]="['/location-details', location.id]">
+                        <h2>{{location.name}}</h2>
+                    </a>
+                    <h6 class="text-muted">Type of location: <strong>{{location.type}}</strong></h6>
+                    <h6 class="text-muted">Dimension: <strong>{{location.dimension}}</strong></h6>
+                    <h6 class="text-muted">List of residents: <strong>{{location.residents}}</strong></h6>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<button [routerLink]="['/home']" class="btn btn-dark btn-lg mt-3">
+    Back
+</button>

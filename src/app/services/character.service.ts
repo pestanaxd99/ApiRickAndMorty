@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 
 import { Character } from '../interfaces/Character';
+import { Location } from '../interfaces/Location';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
@@ -18,6 +19,10 @@ export class CharacterService {
 
   getDetails(id: number){
     return this.http.get<Character>(`${environment.API_URL}/${id}`);
+  }
+
+  getLocation(id: number){
+    return this.http.get<Location>(`${environment.API_URL1}/${id}`);
   }
 
 }
